@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{const input=document.querySelector('[data-search]');if(input){const items=[...document.querySelectorAll('[data-item]')];input.addEventListener('input',e=>{const q=e.target.value.trim().toLowerCase();items.forEach(el=>{el.style.display=el.textContent.toLowerCase().includes(q)?'':'none';});});}});
